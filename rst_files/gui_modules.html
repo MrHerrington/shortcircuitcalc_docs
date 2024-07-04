@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modules &mdash; ShortCircuitCalc  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tools" href="tools.html" />
+    <link rel="prev" title="Package description" href="gui_description.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ShortCircuitCalc
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">PACKAGES</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="database.html">database</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gui.html">gui</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gui_description.html">Package description</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">tools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">MODULES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config.html">config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">run</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ShortCircuitCalc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="gui.html">gui</a></li>
+      <li class="breadcrumb-item active">Modules</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/rst_files/gui_modules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Permalink to this heading"></a></h1>
+<section id="module-shortcircuitcalc.gui.figures">
+<span id="figures"></span><h2>figures<a class="headerlink" href="#module-shortcircuitcalc.gui.figures" title="Permalink to this heading"></a></h2>
+<p>The module contains classes for drawing matplotlib figures in the GUI PyQt5.</p>
+<dl class="simple">
+<dt>Requirements for correctly working CairoSVG module:</dt><dd><ul class="simple">
+<li><p>GTK+ for Windows Runtime Environment Installer;</p></li>
+<li><p>UniConvertor 2.0 Release Candidate 5 (RC5).</p></li>
+</ul>
+</dd>
+<dt>Classes:</dt><dd><ul class="simple">
+<li><p>ResultsFigure: Class for drawing results figure in the GUI.</p></li>
+<li><p>CatalogFigure: Class for drawing catalog figure in the GUI.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.figures.CatalogFigure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CatalogFigure</span></span><a class="headerlink" href="#shortcircuitcalc.gui.figures.CatalogFigure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class for drawing catalog figure in the GUI.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.figures.ResultsFigure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResultsFigure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="tools_modules.html#shortcircuitcalc.tools.elements.ChainsSystem" title="shortcircuitcalc.tools.elements.ChainsSystem"><span class="pre">ChainsSystem</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.figures.ResultsFigure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class for drawing results figure in the GUI.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.figures.ResultsFigure.schem">
+<span class="sig-name descname"><span class="pre">schem</span></span><a class="headerlink" href="#shortcircuitcalc.gui.figures.ResultsFigure.schem" title="Permalink to this definition"></a></dt>
+<dd><p>electrical system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="tools_modules.html#shortcircuitcalc.tools.elements.ChainsSystem" title="shortcircuitcalc.tools.elements.ChainsSystem">ChainsSystem</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-shortcircuitcalc.gui.windows">
+<span id="windows"></span><h2>windows<a class="headerlink" href="#module-shortcircuitcalc.gui.windows" title="Permalink to this heading"></a></h2>
+<p>The module contains GUI windows templates, using PyQt5 and Matplotlib.
+Classes are based on ui files, developed by QtDesigner and customized.</p>
+<dl class="simple">
+<dt>Inner functionality:</dt><dd><ul class="simple">
+<li><p>CustomGraphicView: The class initializes a window shows graphical objects.</p></li>
+<li><p>CustomPlainTextEdit: The class initializes a custom text edit with a custom caret.</p></li>
+<li><p>CustomTextEditLogger: The class initializes custom text edit object for logging interface in the GUI.</p></li>
+<li><p>ConfirmWindow: The class initializes custom QDialog object.</p></li>
+<li><p>WindowMixin: The class initializes the mixin for graphic window object.</p></li>
+</ul>
+</dd>
+<dt>Custom threads:</dt><dd><ul class="simple">
+<li><p>GraphicsDataThread: The class defines a thread for loading graphics data.</p></li>
+<li><p>TableDataThread: The class defines a thread for loading table data.</p></li>
+</ul>
+</dd>
+<dt>App main windows:</dt><dd><ul class="simple">
+<li><p>MainWindow: The class defines the main window of the program.</p></li>
+<li><p>DatabaseBrowser: The class creates database browser window and allows to manage database.</p></li>
+</ul>
+</dd>
+<dt>Other functionality:</dt><dd><ul class="simple">
+<li><p>empty.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.ConfirmWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConfirmWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.ConfirmWindow" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QDialog</span></code></p>
+<p>The class initializes custom QDialog object.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.ConfirmWindow.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.ConfirmWindow.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[QtWdgets.QWidget], optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.ConfirmWindow.msg">
+<span class="sig-name descname"><span class="pre">msg</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.ConfirmWindow.msg" title="Permalink to this definition"></a></dt>
+<dd><p>The message to be displayed. If None, show ‘Are you sure?’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomGraphicView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Figure</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Viewer'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsView</span></code></p>
+<p>The class initializes a window shows graphical objects.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QtWdgets.QWidget, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.figure">
+<span class="sig-name descname"><span class="pre">figure</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.figure" title="Permalink to this definition"></a></dt>
+<dd><p>The Matplotlib figure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>matplotlib.figure.Figure, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.title" title="Permalink to this definition"></a></dt>
+<dd><p>The title of the graphic window.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Interface:</dt><dd><ul class="simple">
+<li><p>supports scrolling, zooming and panning working scene by handling events.</p></li>
+<li><p>set_figure: The method sets the figure to the view scene.</p></li>
+<li><p>save_model: The method saves the current figure as an any graphical file.</p></li>
+<li><p>save_fragment: The method saves the current visible area widget as an image.</p></li>
+</ul>
+</dd>
+<dt>Handling events:</dt><dd><ul class="simple">
+<li><p>mousePressEvent: The method handles mouse press event.</p></li>
+<li><p>mouseMoveEvent: The method handles mouse move event.</p></li>
+<li><p>mouseReleaseEvent: The method handles mouse release event.</p></li>
+<li><p>wheelEvent: The method handles mouse wheel event.</p></li>
+<li><p>contextMenuEvent: The method handles context menu event.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.contextMenuEvent">
+<span class="sig-name descname"><span class="pre">contextMenuEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QContextMenuEvent</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.contextMenuEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the context menu event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtGui.QContextMenuEvent</em>) – The context menu event.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.init_gui">
+<span class="sig-name descname"><span class="pre">init_gui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.init_gui" title="Permalink to this definition"></a></dt>
+<dd><p>The method initializes window GUI.</p>
+<dl class="simple">
+<dt>Definite:</dt><dd><ul class="simple">
+<li><p>Window title</p></li>
+<li><p>Scene settings</p></li>
+<li><p>Anchor settings</p></li>
+<li><p>Context menu actions settings</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.mouseMoveEvent">
+<span class="sig-name descname"><span class="pre">mouseMoveEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="m"><span class="pre">1</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.mouseMoveEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the mouse move event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtCore.Qt.MouseButton.LeftButton</em>) – The mouse move event.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.mousePressEvent">
+<span class="sig-name descname"><span class="pre">mousePressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="m"><span class="pre">1</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.mousePressEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the mouse press event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtCore.Qt.MouseButton.LeftButton</em>) – The mouse press event.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.mouseReleaseEvent">
+<span class="sig-name descname"><span class="pre">mouseReleaseEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="m"><span class="pre">1</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.mouseReleaseEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the mouse release event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtCore.Qt.MouseButton.LeftButton</em>) – The mouse release event.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.save_fragment">
+<span class="sig-name descname"><span class="pre">save_fragment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.save_fragment" title="Permalink to this definition"></a></dt>
+<dd><p>The method saves the current visible area widget as an image.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Saves the current visible area as an image without the scrollbars.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.save_model">
+<span class="sig-name descname"><span class="pre">save_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.save_model" title="Permalink to this definition"></a></dt>
+<dd><p>The method saves the current figure as an any graphical file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.set_figure">
+<span class="sig-name descname"><span class="pre">set_figure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Figure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_zoom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.set_figure" title="Permalink to this definition"></a></dt>
+<dd><p>The method sets the figure to the view scene.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>figure</strong> (<em>matplotlib.figure.Figure</em>) – The Matplotlib figure.</p></li>
+<li><p><strong>custom_zoom</strong> (<em>bool</em><em>, </em><em>optional</em>) – The flag for custom zoom, need if fig dpi &gt; default.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sets start viewing position in top left corner scene.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.wheelEvent">
+<span class="sig-name descname"><span class="pre">wheelEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="m"><span class="pre">67108864</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.wheelEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the wheel event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtCore.Qt.KeyboardModifier.ControlModifier</em>) – The wheel event.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomGraphicView.zoom_initialize">
+<span class="sig-name descname"><span class="pre">zoom_initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomGraphicView.zoom_initialize" title="Permalink to this definition"></a></dt>
+<dd><p>The method sets custom zoom initialization for scene and figure.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomPlainTextEdit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomPlainTextEdit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomPlainTextEdit" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QPlainTextEdit</span></code></p>
+<p>The class initializes a custom text edit with a custom caret.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomPlainTextEdit.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomPlainTextEdit.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[QtWdgets.QWidget], optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Handling events:</dt><dd><p>paintEvent(self, event: QtGui.QPaintEvent)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomPlainTextEdit.paintEvent">
+<span class="sig-name descname"><span class="pre">paintEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QPaintEvent</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomPlainTextEdit.paintEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the paint event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtGui.QPaintEvent</em>) – The context menu event.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomTextEditLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomTextEditLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomTextEditLogger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QPlainTextEdit</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Handler</span></code></p>
+<p>The class initializes custom text edit object for logging interface in the GUI.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomTextEditLogger.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomTextEditLogger.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[QtWdgets.QWidget], optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Handling events:</dt><dd><p>emit(self, record: logging.LogRecord)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.CustomTextEditLogger.emit">
+<span class="sig-name descname"><span class="pre">emit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">LogRecord</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.CustomTextEditLogger.emit" title="Permalink to this definition"></a></dt>
+<dd><p>Do whatever it takes to actually log the specified logging record.</p>
+<p>This version is intended to be implemented by subclasses and so raises a NotImplementedError.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>record</strong> (<em>logging.LogRecord</em>) – The record to be logged.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Signals:</dt><dd><ul class="simple">
+<li><p>append_plain_text(str): The text to be appended to the logs terminal.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatabaseBrowser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code>, <a class="reference internal" href="#shortcircuitcalc.gui.windows.WindowMixin" title="shortcircuitcalc.gui.windows.WindowMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">WindowMixin</span></code></a></p>
+<p>The class creates database browser window and allows to manage database.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QtWdgets.QWidget, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Interface:</dt><dd><ul class="simple">
+<li><p>Shows different categories of database in separate views.</p></li>
+<li><p>Allows to install or reinstall database.</p></li>
+<li><p>Allows to manage database.</p></li>
+<li><p>Supports CRUD operations on database as insert, update and delete.</p></li>
+<li><p>Supports update keys and non keys values.</p></li>
+<li><p>Supports delete values from joined tables and source tables (from catalog).</p></li>
+</ul>
+</dd>
+<dt>Handling events:</dt><dd><ul class="simple">
+<li><p>crud_event: The method get tools and ready for CRUD operations to execution, await command.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.crud_event">
+<span class="sig-name descname"><span class="pre">crud_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">get_tools</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">namedtuple</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.crud_event" title="Permalink to this definition"></a></dt>
+<dd><p>The method get tools and ready for CRUD operations to execution, await command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>get_tools</strong> (<em>namedtuple</em>) – tools for CRUD operations.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.crud_operations">
+<span class="sig-name descname"><span class="pre">crud_operations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.crud_operations" title="Permalink to this definition"></a></dt>
+<dd><p>The method executes the CRUD operations when crud_event is called.</p>
+<p>Update method supports update keys and non keys values.
+Delete method supports delete values from joined tables (pivot table)
+and source tables (from catalog).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.get_delete_tools">
+<span class="sig-name descname"><span class="pre">get_delete_tools</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">namedtuple</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.get_delete_tools" title="Permalink to this definition"></a></dt>
+<dd><p>The method returns tools for delete operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tools for delete operations.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>namedtuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.get_insert_tools">
+<span class="sig-name descname"><span class="pre">get_insert_tools</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">namedtuple</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.get_insert_tools" title="Permalink to this definition"></a></dt>
+<dd><p>The method returns tools for insert operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tools for insert operations.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>namedtuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.get_update_tools">
+<span class="sig-name descname"><span class="pre">get_update_tools</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">namedtuple</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.get_update_tools" title="Permalink to this definition"></a></dt>
+<dd><p>The method returns tools for update operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tools for update operations.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>namedtuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.init_gui">
+<span class="sig-name descname"><span class="pre">init_gui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.init_gui" title="Permalink to this definition"></a></dt>
+<dd><p>The method initializes the database browser GUI.</p>
+<dl class="simple">
+<dt>Interface initialization includes:</dt><dd><ul class="simple">
+<li><p>Initial start interface.</p></li>
+<li><p>Main keys actions binding.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.reinstall_database">
+<span class="sig-name descname"><span class="pre">reinstall_database</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.reinstall_database" title="Permalink to this definition"></a></dt>
+<dd><p>The method allows to install or reinstall the database.</p>
+<p>Clear or partially install depending on the installation settings configuration.
+After operation, the catalog view is updated.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.DatabaseBrowser.show_database">
+<span class="sig-name descname"><span class="pre">show_database</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.DatabaseBrowser.show_database" title="Permalink to this definition"></a></dt>
+<dd><p>The method loads data from database in separate threads and shows it in the views.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.GraphicsDataThread">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GraphicsDataThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outer_fn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">GraphicClass</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Callable</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner_fn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">GraphicClass</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Callable</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.GraphicsDataThread" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QThread</span></code></p>
+<p>The class defines a thread for loading graphics data.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.GraphicsDataThread.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.GraphicsDataThread.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QtWdgets.QWidget, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.GraphicsDataThread.outer_fn">
+<span class="sig-name descname"><span class="pre">outer_fn</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.GraphicsDataThread.outer_fn" title="Permalink to this definition"></a></dt>
+<dd><p>The outer function object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Callable, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.GraphicsDataThread.inner_fn">
+<span class="sig-name descname"><span class="pre">inner_fn</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.GraphicsDataThread.inner_fn" title="Permalink to this definition"></a></dt>
+<dd><p>The inner function object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Callable, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Signals:</dt><dd><ul class="simple">
+<li><p>save_data(object): The data to be saved.</p></li>
+<li><p>read_data(object): The data to be read.</p></li>
+<li><p>load_complete(str): The message to be displayed on the success of loading.</p></li>
+<li><p>load_failure(str): The message to be displayed on the failure of loading.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.GraphicsDataThread.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.GraphicsDataThread.run" title="Permalink to this definition"></a></dt>
+<dd><p>The method runs separated thread.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MainWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code>, <a class="reference internal" href="#shortcircuitcalc.gui.windows.WindowMixin" title="shortcircuitcalc.gui.windows.WindowMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">WindowMixin</span></code></a></p>
+<p>The class defines the main window of the program.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QtWdgets.QWidget, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Interface:</dt><dd><ul class="simple">
+<li><p>Contains informative logs terminal.</p></li>
+<li><p>Contains input terminal allowing to input data.</p></li>
+<li><p>Shows dynamic interactive results and allows save them in any format.</p></li>
+<li><p>Contain dynamic catalog of current database unique values.</p></li>
+<li><p>Contains settings panel for the program and allows to change them at any time (partial).</p></li>
+<li><p>Allow to open custom database browser for manage database.</p></li>
+</ul>
+</dd>
+<dt>Handling events:</dt><dd><ul class="simple">
+<li><p>eventFilter: The method handles eventFilter.</p></li>
+<li><p>closeEvent: The method handles the close event of the window.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.admit_changes">
+<span class="sig-name descname"><span class="pre">admit_changes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">critical_param</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QComboBox</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.admit_changes" title="Permalink to this definition"></a></dt>
+<dd><p>The method admit critical changes and reload app if changes were made.</p>
+<p>The method admit critical changes and reload app if changes were made.
+If changes were not made, the method returns to previous state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>critical_param</strong> (<em>str</em>) – The name of critical param.</p></li>
+<li><p><strong>owner</strong> (<em>QtWidgets.QComboBox</em>) – The owner of param field.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.closeEvent">
+<span class="sig-name descname"><span class="pre">closeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QCloseEvent</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.closeEvent" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles the close event of the window.</p>
+<p>This function is called when the user tries to close the window. It creates a confirmation window
+and displays it to the user. If the user confirms the close action, the event is accepted and the
+window is closed. Otherwise, the event is ignored and the window remains open.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QtGui.QCloseEvent</em>) – The close event object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.eventFilter">
+<span class="sig-name descname"><span class="pre">eventFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QWidget</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QEvent</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.eventFilter" title="Permalink to this definition"></a></dt>
+<dd><p>The method handles eventFilter.</p>
+<p>When console input is focused and pressed ‘CTRL + ENTER’, the method start new thread
+for loading interactive results figure. When it is done, the results view is updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obj</strong> (<em>QtWidgets.QWidget</em>) – The widget object.</p></li>
+<li><p><strong>event</strong> (<em>QtCore.QEvent</em>) – The event object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.init_gui">
+<span class="sig-name descname"><span class="pre">init_gui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.init_gui" title="Permalink to this definition"></a></dt>
+<dd><p>The method initializes the main window GUI.</p>
+<dl class="simple">
+<dt>Interface initialization includes:</dt><dd><ul class="simple">
+<li><p>Logger frame settings.</p></li>
+<li><p>Initial start interface.</p></li>
+<li><p>Main bar buttons config.</p></li>
+<li><p>Side panel buttons config.</p></li>
+<li><p>Input tab settings.</p></li>
+<li><p>Results tab settings.</p></li>
+<li><p>Catalog tab settings.</p></li>
+<li><p>Settings tab config.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.open_db_browser">
+<span class="sig-name descname"><span class="pre">open_db_browser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.open_db_browser" title="Permalink to this definition"></a></dt>
+<dd><p>The method create and open database browser window.</p>
+<p>If database browser is already were opened in session, the method just opens it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.restart_app">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">restart_app</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.restart_app" title="Permalink to this definition"></a></dt>
+<dd><p>The method restarts the app.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.save_interactive_stmt">
+<span class="sig-name descname"><span class="pre">save_interactive_stmt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure_obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Figure</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.save_interactive_stmt" title="Permalink to this definition"></a></dt>
+<dd><p>The method save interactive figure in the app state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>figure_obj</strong> (<em>matplotlib.figure.Figure</em>) – The matplotlib figure object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.MainWindow.set_catalog">
+<span class="sig-name descname"><span class="pre">set_catalog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.MainWindow.set_catalog" title="Permalink to this definition"></a></dt>
+<dd><p>The method set catalog figure in the catalog view.</p>
+<p>Loading catalog figure processing in a separate thread
+and when it is done, the catalog view is updated.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.TableDataThread">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TableDataThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.TableDataThread" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QThread</span></code></p>
+<p>The class defines a thread for loading table data.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.TableDataThread.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.TableDataThread.parent" title="Permalink to this definition"></a></dt>
+<dd><p>The parent widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QtWdgets.QWidget, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.TableDataThread.table">
+<span class="sig-name descname"><span class="pre">table</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.TableDataThread.table" title="Permalink to this definition"></a></dt>
+<dd><p>The table object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Table</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Signals:</dt><dd><ul class="simple">
+<li><p>load_data(object): The data to be loaded.</p></li>
+<li><p>load_complete(str): The message to be displayed on the success of loading.</p></li>
+<li><p>load_failure(str): The message to be displayed on the failure of loading.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.TableDataThread.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#shortcircuitcalc.gui.windows.TableDataThread.run" title="Permalink to this definition"></a></dt>
+<dd><p>The method runs separated thread.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.WindowMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WindowMixin</span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.WindowMixin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class initializes the mixin for graphic window object.</p>
+<dl class="simple">
+<dt>Mixins methods:</dt><dd><ul class="simple">
+<li><p>window_center_position: The method centers the window on the screen.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="shortcircuitcalc.gui.windows.WindowMixin.window_center_position">
+<span class="sig-name descname"><span class="pre">window_center_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shift_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shortcircuitcalc.gui.windows.WindowMixin.window_center_position" title="Permalink to this definition"></a></dt>
+<dd><p>The method centers the window on the screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shift_x</strong> (<em>int</em><em>, </em><em>optional</em>) – The shift on the X axis in percentage. Defaults to 0.</p></li>
+<li><p><strong>shift_y</strong> (<em>int</em><em>, </em><em>optional</em>) – The shift on the Y axis in percentage. Defaults to 0.</p></li>
+<li><p><strong>relative</strong> (<em>ty.Tuple</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Relative position of one window relative to another.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gui_description.html" class="btn btn-neutral float-left" title="Package description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tools.html" class="btn btn-neutral float-right" title="tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ilya Belov.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
